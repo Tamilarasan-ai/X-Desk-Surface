@@ -1,0 +1,188 @@
+@import './font.css';
+* {
+  margin: 0%;
+  padding: 0%;
+  font-family: "ArticulatCF-Normal";
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  background-image: url("../assets/forest_img.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.container .signup {
+  display: flex;
+  width: 80%;
+  margin: 0rem 2rem 0rem 2rem;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.container .signup .signup_container {
+  padding: 3rem 5rem 3rem 5rem;
+  width: 45%;
+}
+.container .signup .signup_container h1 {
+  margin: 1rem 0rem 2rem 0rem;
+  font-family: "ArticulatCF-Bold";
+}
+.container .signup .signup_container form {
+  display: flex;
+  flex-direction: column;
+}
+.container .signup .signup_container form label, .container .signup .signup_container form input, .container .signup .signup_container form button {
+  border-radius: 3px;
+}
+.container .signup .signup_container form label {
+  font-size: 1.2rem;
+  margin-bottom: 0.2rem;
+  font-family: "ArticulatCF-Bold";
+}
+.container .signup .signup_container form input {
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+}
+.container .signup .signup_container form .signup_btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0rem 2rem 0rem;
+}
+.container .signup .signup_container form .signup_btn button {
+  padding: 0.5rem 2rem 0.5rem 2rem;
+  background-color: black;
+  border-radius: 3rem;
+  color: white;
+  font-size: 1.2rem;
+}
+.container .signup .signup_container .login_account {
+  display: flex;
+  float: right;
+}
+.container .signup .signup_img {
+  border: 2px solid;
+  width: 55%;
+  background-image: url("../assets/deer.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.container .signup .signup_img h1 {
+  color: white;
+  font-family: "Kurale", serif;
+  font-weight: 400;
+  font-style: normal;
+  margin: 2rem;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+}
+
+.navbar-brand a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navbar-toggler {
+  display: none;
+  cursor: pointer;
+}
+
+.navbar-toggler span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin-bottom: 5px;
+}
+
+.navbar-nav {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  margin-right: 1rem;
+}
+
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .navbar-toggler {
+    display: block;
+  }
+  .navbar-collapse {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    padding: 1rem;
+  }
+  .navbar-collapse.show {
+    display: block;
+  }
+  .navbar-nav {
+    flex-direction: column;
+  }
+  .nav-item {
+    margin-right: 0;
+    margin-bottom: 0.5rem;
+  }
+}
+/* Styles for containers */
+.container1 {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 1rem;
+  height: 100vh;
+}
+
+/* Styles for sections */
+section {
+  padding: 4rem 0;
+}
+
+/* Styles for home section */
+.home {
+  background-color: #f8f9fa;
+  text-align: center;
+}
+
+/* Styles for about section */
+.about {
+  background-color: #e9ecef;
+}
+
+/* Styles for services section */
+.services {
+  background-color: #dee2e6;
+}
+
+/* Styles for footer */
+.footer {
+  background-color: #343a40;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+}/*# sourceMappingURL=Style.css.map */

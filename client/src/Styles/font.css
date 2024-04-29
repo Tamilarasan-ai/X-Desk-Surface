@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'ArticulatCF-Normal';
+    src: url('../font/Articulat-CF-v3.2-OTF/ArticulatCF-Normal.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ArticulatCF-Bold';
+    src: url('../font/Articulat-CF-v3.2-OTF/ArticulatCF-Bold.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
