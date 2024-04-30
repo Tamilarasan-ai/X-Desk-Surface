@@ -8,8 +8,8 @@ export default function About() {
       <h2>About Us</h2>
       <p>This is the about section.</p>
       <div className="action">
-      <div className="img"><GradientGenerator/></div>
-      <div className="buttons">  <Servocontrol/></div>
+      <div className="img"><GradientGenerator/> </div>
+      <div className="control-container"> <Servocontrol/> </div>
       </div>
     </div>
   </section>

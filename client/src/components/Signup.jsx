@@ -54,9 +54,8 @@ const SignUp = () => {
       </div>
 
       <div className='signup_img'>
-        
-        
       </div>
+    
     </div>
     </div>
   )

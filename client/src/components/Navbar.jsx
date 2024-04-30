@@ -1,4 +1,4 @@
-import  { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import './Navbar.css';
 
 const Navbar = () => {
@@ -31,24 +31,35 @@ const Navbar = () => {
       <div className="navbar-brand">
         <a href="#">Your Logo</a>
       </div>
-      <div className={`navbar-toggler ${isOpen ? 'open' : ''}`} onClick={toggleNavbar}>
-        <span className="icon-bar"></span>
-        <span className="icon-bar"></span>
-        <span className="icon-bar"></span>
+      <div
+        className={`navbar-toggler ${isOpen ? 'open' : ''}`}
+        onClick={toggleNavbar}
+      >
+        <span className={`icon-bar ${isOpen ? 'top-bar' : ''}`}></span>
+        <span className={`icon-bar ${isOpen ? 'middle-bar' : ''}`}></span>
+        <span className={`icon-bar ${isOpen ? 'bottom-bar' : ''}`}></span>
       </div>
       <div className={`navbar-collapse ${isOpen ? 'show' : ''}`}>
         <ul className="navbar-nav">
           <li className="nav-item">
-            <a href="#home" className="nav-link">Home</a>
+            <a href="#home" className="nav-link">
+              Home
+            </a>
           </li>
           <li className="nav-item">
-            <a href="#about" className="nav-link">About</a>
+            <a href="#about" className="nav-link">
+              About
+            </a>
           </li>
           <li className="nav-item">
-            <a href="#services" className="nav-link">Services</a>
+            <a href="#services" className="nav-link">
+              Services
+            </a>
           </li>
           <li className="nav-item">
-            <a href="#contact" className="nav-link">Contact</a>
+            <a href="#contact" className="nav-link">
+              Contact
+            </a>
           </li>
         </ul>
       </div>

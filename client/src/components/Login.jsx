@@ -24,8 +24,7 @@ const LoginForm = () => {
   return (
     <div className='container'>
       <div className="signup">
-      <div className='signup_img'>
-        <h1>WELCOME BACK!</h1>
+      <div className='signup_img' style={{borderRadius:"15px 0px 0px 15px", borderLeft:"0px",borderRight:"2px solid black"}}>
       </div>
         <div className='signup_container'>
           <h1>Login</h1>

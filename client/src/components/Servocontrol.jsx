@@ -1,4 +1,6 @@
 import WebSocketClient from "./WebSocketClient.jsx";
+import { SlArrowUp } from "react-icons/sl";
+import { SlArrowDown } from "react-icons/sl";
 
 
 export default function Servocontrol() {
@@ -13,14 +15,20 @@ export default function Servocontrol() {
     };
   
     return (
-      <div>
-        <div>
-          <button onClick={handleClockwiseClick}>Clockwise</button>
-          <button onClick={handleCounterClockwiseClick}>Counterclockwise</button>
+      <div className="control" >
+        <p>Connected</p>
+        <div className="btn">
+          <button className="button-1" onClick={handleClockwiseClick}><SlArrowUp /></button>
+          <button className="button-2" onClick={handleCounterClockwiseClick}><SlArrowDown /></button>
         </div>
-        <div>
+        <div className="control-speed-btn-wrapper">
+          <button className="speed-low">Low</button>
+          <button className="speed-mid">Mid</button>
+          <button className="speed-high">High</button>
+        </div>
+        <div className="angle-container">
           <h2>Current Angle</h2>
-          <div style={{ border: "1px solid black", padding: "16px" }}>
+          <div className="status">
             <p>{currentAngle}</p>
           </div>
         </div>
