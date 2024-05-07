@@ -1,6 +1,7 @@
 import WebSocketClient from "./WebSocketClient.jsx";
 import { SlArrowUp } from "react-icons/sl";
 import { SlArrowDown } from "react-icons/sl";
+import { BiBluetooth } from "react-icons/bi";
 
 
 export default function Servocontrol() {
@@ -15,8 +16,8 @@ export default function Servocontrol() {
     };
   
     return (
-      <div className="control" >
-        <p>Connected</p>
+      <div className="control">
+        <p className="connected">Connected <BiBluetooth /></p>
         <div className="btn">
           <button className="button-1" onClick={handleClockwiseClick}><SlArrowUp /></button>
           <button className="button-2" onClick={handleCounterClockwiseClick}><SlArrowDown /></button>
@@ -27,7 +28,9 @@ export default function Servocontrol() {
           <button className="speed-high">High</button>
         </div>
         <div className="angle-container">
-          <h2>Current Angle</h2>
+          <div  className="angle-label">
+          <h2>Current Height</h2>
+          </div>
           <div className="status">
             <p>{currentAngle}</p>
           </div>

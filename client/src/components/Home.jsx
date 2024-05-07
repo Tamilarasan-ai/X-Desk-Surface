@@ -8,7 +8,6 @@ function Home() {
   return (
     <div id="home" className="Home">
       <Navbar/>
-    
       <About/>
       <Services/>
       <Footer/>
